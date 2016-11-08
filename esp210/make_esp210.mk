@@ -12,6 +12,7 @@
 #       version history mapped on changes in this file:
 #       -----------------------------------------------
 #       ver 1:      Created
+#       ver 3:      Corrected typo
 #
 #       Reference:  https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification
 #                   https://github.com/esp8266/Arduino
@@ -20,7 +21,7 @@
 #                   $(RUNTIME_PLATFORM_PATH)/programmers.txt
 #
 #       Note:       Tested on Mac OS X and Linux Debian, will most likely work 
-#                   on Windows without modifications...
+#                   on Windows with modifications...
 #
 #       License:    This program is free software; you can redistribute it and/or
 #                   modify it under the terms of the GNU General Public License as
