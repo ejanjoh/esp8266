@@ -15,6 +15,9 @@
 #       ver 3:      Corrected typo
 #       ver 4:      Added hooks for project related core files.
 #                   Changed how the path separator order "/" are used in variables
+#       ver 5:      Added to do list
+#
+#       To do:      Add support to upload a file system
 #
 #       Reference:  https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification
 #                   https://github.com/esp8266/Arduino
@@ -67,7 +70,7 @@ UPLOAD_SPEED                := 115200
 SERIAL_PORT                 := /dev/cu.SLAB_USBtoUART
 
 
-# ----- NOTE: PROJECT SPECIFIC SYSTEM INCLUDES -----
+# ----- NOTE: PROJECT RELATED CORE FILES -----------
 
 PROJ_SPEC_SYS_INC           := 
 PROJ_SPEC_SYS_SRC           := 
@@ -272,7 +275,6 @@ extra :
 	$(RECIPE_EXTRA_2_PATTERN)
 	$(RECIPE_EXTRA_3_PATTERN)
 	$(RECIPE_EXTRA_4_PATTERN)
-
 
 
 
