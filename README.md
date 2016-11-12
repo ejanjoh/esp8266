@@ -3,7 +3,7 @@
 
 A makefile to build Arduino projects to a SweetPea ESP210 bord. The makefile will work on other ESP8266 variants as well with some modifications. It is tested and builds on Mac OS X and Linux (Debian); it will, however, not run out of the box on Windows.
 
-The environment used is based on the 2.3.0 version of the [esp8266/Arduino project](https://github.com/esp8266/Arduino) that brings support for the ESP8266 bords to the Arduino IDE. It contain all the software needed to make use of features as WiFi, filesystem, freeRTOS etc. The later needs some modification on some core files.
+The environment used is based on the 2.3.0 version of the [esp8266/Arduino project](https://github.com/esp8266/Arduino) that brings support for the ESP8266 bords to the Arduino IDE. It contain all the software needed to make use of features as WiFi, filesystem etc. The later needs some modification on some core files.
 
 As stated in [Arduino IDE 1.5 3rd party Hardware specification](https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification) there must be three files in the root:
 
@@ -28,7 +28,7 @@ Download the binary tools needed as described by the provider or by:
 	cd esp8266/tools
 	python get.py
 
-Create your Arduino project or just an ordinary C/C++/asm project that use the Arduino hooks – setup() and loop(). By modifing some of the core files you can create more processes and hooks on the underlying OS (Free RTOS) that runs in the background (not to be discussed further here).  
+Create your Arduino project or just an ordinary C/C++/asm project that use the Arduino hooks – setup() and loop(); if you would like to add other psedo tasks that is possible.  
 
 Download the makefile to your project:
 
@@ -43,7 +43,7 @@ Change the following variables in the script to your settings:
 * __BUILD_PATH__ point out a directory containing all files that will be built.
 * __SERIAL_PORT__ point out the port to be used
 
-If you use other versions then described in this short guide some paths needs to be modified. The full paths in the makefile my vary depending on how you install the supported environent, and the makefile needs to be adjusted thereafter.
+If you use other versions then described in this short guide some paths needs to be modified. The full paths in the makefile may vary depending on how you install the supported environent, and the makefile needs to be adjusted thereafter.
 
 ### Using the makefile
 
